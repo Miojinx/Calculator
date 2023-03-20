@@ -23,38 +23,33 @@
             <p id="result"></p>
             <div id="buttons">
 
-                <button>C</button>
-                <button>Del</button>
-                <button>/</button>
-                <button class="operator">x</button>
+                <button onclick="clearResult()">C</button>
+                <button onclick="del()">Del</button>
+                <button onclick="insert('/')">/</button>
+                <button onclick="insert('*')">x</button>
 
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="operator">-</button>
+                <button onclick="insert(7)">7</button>
+                <button onclick="insert(8)">8</button>
+                <button onclick="insert(9)">9</button>
+                <button class="operator" onclick="insert('-')">-</button>
 
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="operator">+</button>
+                <button onclick="insert(4)">4</button>
+                <button onclick="insert(5)">5</button>
+                <button onclick="insert(6)">6</button>
+                <button class="operator" onclick="insert('+')">+</button>
 
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button id="btn-equal" class="operator">=</button>
+                <button onclick="insert(1)">1</button>
+                <button onclick="insert(2)">2</button>
+                <button onclick="insert(3)">3</button>
+                <button id="btn-equal" class="operator" onclick="calc()">=</button>
 
-                <button id="btn-0">0</button>
-                <button>.</button>
+                <button onclick="insert(0)" id="btn-0">0</button>
+                <button onclick="insert('.')">.</button>
 
             </div>
-
-
         </div>
-
     </main>
-
     <footer>Made By Erik Heringer</footer>
-
     <script src="script.js"></script>
 </body>
 

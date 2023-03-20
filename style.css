@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
@@ -44,6 +45,7 @@ main{
 
 #result{
     box-sizing: border-box;
+    color: black;
     background-color: #D6DBDF;
     width: 100%;
     height: 5vw;
@@ -53,6 +55,7 @@ main{
     font-size: 2rem;
     text-align: right;
     border: solid black 1px;
+    max-width: 100%;
 }
 
 #buttons{
@@ -89,4 +92,8 @@ button:hover{
 #btn-0{
     grid-column: 1/ 3; /* could use span 2 instead */
     grid-row: 5/6;
+}
+
+footer{
+
 }
