@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,44 +8,47 @@
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
+
 <body>
-    
+
     <main>
 
         <div class="calculator">
-            <h1>calculator</h1>
-            <p id="Resultado">
-                <table>
-                    <tr>
-                        <td><button>C</button></td>
-                        <td><button>Del</button></td>
-                        <td><button>/</button></td>
-                        <td><button>x</button></td>
-                    </tr>
-                    <tr>
-                        <td><button>7</button></td>
-                        <td><button>8</button></td>
-                        <td><button>9</button></td>
-                        <td><button>-</button></td>
-                    </tr>
-                    <tr>
-                        <td><button>4</button></td>
-                        <td><button>5</button></td>
-                        <td><button>6</button></td>
-                        <td><button>+</button></td>
-                    </tr>
-                    <tr>
-                        <td><button>1</button></td>
-                        <td><button>2</button></td>
-                        <td><button>3</button></td>
-                        <td rowspan="2"><button>=</button></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><button>0</button></td>
-                        <td><button>.</button></td>
-                    </tr>
-                </table>
-            </p>
+            <div id="solar-panel">
+                <div class="solar-panel-parts"></div>
+                <div class="solar-panel-parts"></div>
+                <div class="solar-panel-parts"></div>
+                <div class="solar-panel-parts"></div>
+            </div>
+            <p id="result"></p>
+            <div id="buttons">
+
+                <button>C</button>
+                <button>Del</button>
+                <button>/</button>
+                <button class="operator">x</button>
+
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="operator">-</button>
+
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="operator">+</button>
+
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button id="btn-equal" class="operator">=</button>
+
+                <button id="btn-0">0</button>
+                <button>.</button>
+
+            </div>
+
+
         </div>
 
     </main>
@@ -53,4 +57,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+main{
+    background-color: #424949;
+    height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E8E8;
+    border-radius: 15px;
+    padding: 2%;
+}
+
+#solar-panel{
+    box-sizing: border-box;
+    background-color: black;
+    width: 50%;
+    height: 2.5vw;
+    margin-bottom: 1vw;
+    align-self: flex-start;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+.solar-panel-parts{
+    background-color: #6E2C00;
+    height: 80%;
+    width: 23%;
+}
+
+#result{
+    box-sizing: border-box;
+    background-color: #D6DBDF;
+    width: 100%;
+    height: 5vw;
+    padding: 5%;
+    border-radius: 10px;
+    margin-bottom: 1vw;
+    font-size: 2rem;
+    text-align: right;
+    border: solid black 1px;
+}
+
+#buttons{
+    display: grid;
+    grid-template-rows: 4vw 4vw 4vw 4vw 4vw;
+    grid-template-columns: 4vw 4vw 4vw 4vw;
+    grid-gap: 0.4vw;
+}
+
+button{
+    background-color: #B2BABB;
+    font-size: 1.5rem;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+#buttons button{
+    border: none;
+    border-radius: 5px;
+}
+
+.operator{
+    background-color: #F39C12;
+}
+
+#btn-equal{
+    grid-row: 4 / 6;
+    grid-column: 4 / 5;
+}
+
+#btn-0{
+    grid-column: 1/ 3; /* could use span 2 instead */
+    grid-row: 5/6;
+}
