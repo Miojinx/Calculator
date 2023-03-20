@@ -95,5 +95,14 @@ button:hover{
 }
 
 footer{
+    text-align: center;
+    background-color: #B2BABB;
+}
 
+footer a, footer a:visited{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: 0.3s;
 }
