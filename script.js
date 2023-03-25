@@ -18,7 +18,7 @@ function calc() {
     let operation = document.getElementById("result").innerHTML
     if (operation) {
         let result = eval(operation)
-        if (result >10)
+        if (result.length >10)
             document.getElementById("result").innerHTML = "Too long"
         else
         document.getElementById("result").innerHTML = result
